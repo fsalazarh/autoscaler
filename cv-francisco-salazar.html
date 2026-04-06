@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+    background: linear-gradient(to right, #fff 65%, #3d4d5c 65%);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #333;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Main content column */
+  .main {
+    width: 65%;
+    padding: 28px 22px 28px 28px;
+    float: left;
+  }
+
+  /* Sidebar - right column */
+  .sidebar {
+    width: 35%;
+    color: #fff;
+    padding: 28px 18px;
+    float: right;
+  }
+
+  h1 {
+    font-size: 21pt;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  .subtitle {
+    font-size: 9pt;
+    letter-spacing: 3px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #222;
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+  h3 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #222;
+    margin-top: 9px;
+    margin-bottom: 1px;
+  }
+  .date {
+    font-size: 7.5pt;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .profile-text {
+    font-size: 8.5pt;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  ul {
+    padding-left: 14px;
+    margin-bottom: 3px;
+  }
+  li {
+    margin-bottom: 2px;
+    font-size: 8.5pt;
+    color: #444;
+  }
+
+  /* Sidebar styles */
+  .sidebar-section {
+    margin-bottom: 18px;
+  }
+  .sidebar-title {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+  .sidebar-text {
+    font-size: 8pt;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  .skill-item {
+    margin-bottom: 6px;
+  }
+  .skill-name {
+    font-size: 8pt;
+    color: #eee;
+    margin-bottom: 2px;
+  }
+  .skill-bar {
+    height: 4px;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .skill-fill {
+    height: 100%;
+    background-color: #8bb8d4;
+    border-radius: 3px;
+  }
+  .verified {
+    color: #8bb8d4;
+    font-size: 7.5pt;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="main">
+  <h1>Francisco Alberto Salazar<br>Herrera</h1>
+  <div class="subtitle">Sr. DevOps Engineer</div>
+
+  <h2>Profile</h2>
+  <p class="profile-text">
+    Senior DevOps Engineer with 8+ years of experience in infrastructure and systems administration for
+    SaaS products. CKA and CKAD certified. Specialized in <strong>AWS and GCP infrastructure</strong> (7+ years of continuous GCP experience),
+    Kubernetes orchestration, Terraform IaC, and CI/CD pipeline optimization (Jenkins, GitHub Actions, GitLab CI, Cloud Build). Proven track
+    record of reducing cloud costs by 30%, accelerating CI/CD execution by 3x, and improving production
+    reliability through monitoring, autoscaling, and security best practices. Experienced in managing Linux
+    servers, application servers, and deploying observability stacks (New Relic, ELK, Grafana, GCP Monitoring).
+  </p>
+
+  <h2>Employment History</h2>
+
+  <h3>Sr. DevOps Engineer, TeselaGen, Remote (California, USA)</h3>
+  <div class="date">Jan 2024 — Present</div>
+  <ul>
+    <li>Reduced <strong>cloud costs by 30%</strong> (~$48K/year saved) through workload rightsizing, autoscaling policies, and storage lifecycle optimization across <strong>AWS and GCP</strong>.</li>
+    <li>Optimized <strong>CI/CD pipelines</strong> using <strong>Cloud Build and GitHub Actions</strong>, cutting execution time by <strong>3x</strong> — from 3 hours to 1 hour — accelerating developer feedback loops.</li>
+    <li>Reduced <strong>Docker</strong> image sizes by up to <strong>10x</strong> and improved container startup times by <strong>2x</strong>, improving deployment reliability and rollback speed across <strong>container registries (ECR/GCR/Artifact Registry)</strong>.</li>
+    <li>Implemented <strong>GitOps from scratch</strong> with ArgoCD, establishing a secure, auditable deployment workflow across all environments.</li>
+    <li>Built end-to-end <strong>Infrastructure as Code with Terraform</strong> on <strong>AWS and GCP</strong>, standardizing provisioning across dev, staging, and production with reusable modules.</li>
+    <li>Managed <strong>GKE and EKS clusters</strong>, configuring autoscaling, node pools, and workload scheduling with <strong>Cloud Scheduler</strong> for batch processing.</li>
+    <li>Administered <strong>GCP IAM policies and permissions</strong>, enforcing least-privilege access across teams and service accounts.</li>
+    <li>Strengthened <strong>security and compliance</strong> by implementing Vault CSI driver, secret rotation policies, and <strong>container vulnerability scanning</strong>.</li>
+  </ul>
+
+  <h3>Backend &amp; DevOps Engineer, BloomAlert, Remote</h3>
+  <div class="date">Feb 2023 — Jan 2024</div>
+  <ul>
+    <li>Designed and deployed a <strong>custom monitoring and alerting system</strong> using Grafana, <strong>GCP Monitoring</strong>, and Python, improving alert accuracy and significantly reducing false positives.</li>
+    <li>Defined <strong>SLA/SLI/SLO metrics</strong> and integrated observability with <strong>New Relic</strong> and <strong>GCP Monitoring</strong>, enabling proactive incident response and reducing MTTR.</li>
+    <li>Provisioned and managed <strong>AWS and GCP infrastructure with Terraform</strong>, creating reproducible and version-controlled environments.</li>
+    <li>Migrated <strong>20+ ETL pipelines</strong> from Prefect 1.x to Prefect 2.0, improving data pipeline efficiency and maintainability.</li>
+    <li>Managed <strong>GCE instances and GCP Load Balancers</strong> for application workloads, ensuring high availability and cost efficiency.</li>
+    <li>Coordinated between development and operations teams to ensure <strong>monitoring coverage</strong> and smooth rollout of infrastructure changes.</li>
+  </ul>
+
+  <h3>Software &amp; DevOps Engineer, Caligrafix, Remote</h3>
+  <div class="date">Jun 2021 — Feb 2023</div>
+  <ul>
+    <li>Implemented a <strong>customized Kubernetes VPA</strong> on <strong>AWS EKS and GKE</strong> for production database clusters, ensuring high availability under variable load.</li>
+    <li>Integrated <strong>Cluster Autoscaler with VPA</strong>, dynamically scaling <strong>EC2 and GCE</strong> compute resources and improving cloud cost efficiency.</li>
+    <li>Developed an <strong>automated volume resizing tool</strong> for Kubernetes on <strong>AWS EBS and GCP Persistent Disk</strong>, preventing storage outages and eliminating manual intervention.</li>
+    <li>Built <strong>CI/CD pipelines with GitLab CI, Jenkins, and Cloud Build</strong>, improving release velocity and reducing deployment failures.</li>
+    <li>Deployed and tuned the <strong>ELK Stack</strong> and <strong>GCP Cloud Monitoring</strong> for centralized logging, monitoring, and alerting, reducing Mean Time to Recovery (MTTR).</li>
+    <li>Managed <strong>GCP Cloud Storage</strong> buckets for artifact management, backups, and static asset hosting.</li>
+  </ul>
+
+  <h3>Software Engineer, Data Engineer, Unholster, Santiago</h3>
+  <div class="date">Mar 2021 — Jun 2021</div>
+  <ul>
+    <li>Built <strong>Python REST APIs</strong> and <strong>ETL pipelines with Apache Airflow</strong> to process ERP data into financial KPIs and actionable insights.</li>
+    <li>Optimized <strong>CI/CD pipelines (CircleCI)</strong>, reducing build times and improving deployment reliability across multiple environments.</li>
+    <li>Deployed workloads on <strong>GCE instances</strong>, managing infrastructure provisioning and monitoring.</li>
+  </ul>
+
+  <h3>Backend &amp; DevOps Engineer, AgTech Startups (AgroSpace + BloomAlert), Hybrid/Remote (Santiago, Chile)</h3>
+  <div class="date">Jan 2019 — Mar 2021</div>
+  <ul>
+    <li>Built and orchestrated <strong>ETL pipelines</strong> using Apache Airflow and Prefect to process satellite data (NDVI, temperature, chlorophyll).</li>
+    <li>Developed multiple <strong>Flask microservices</strong> to deliver data insights and automate client workflows.</li>
+    <li>Adopted DevOps practices including <strong>Docker, Jenkins CI/CD automation, and IaC</strong> on <strong>AWS and GCP</strong>, reducing deployment time and improving release reliability.</li>
+    <li>Managed <strong>GCE instances, Cloud Storage, and GCP IAM</strong> for multi-environment infrastructure.</li>
+  </ul>
+
+  <h3>Software Engineer, IBM Chile, Santiago</h3>
+  <div class="date">Jan 2017 — Jan 2019</div>
+  <ul>
+    <li>Built <strong>Python microservices</strong> to automate reporting workflows, cutting generation time by <strong>50%</strong>.</li>
+    <li>Developed a <strong>Node-RED sentiment analysis system</strong> for banking Twitter data, enabling early detection of customer issues.</li>
+  </ul>
+
+  <h2>Education</h2>
+
+  <h3>Ingeniero Civil Informático (BSc + MSc Equivalent), Universidad Técnica Federico Santa María, Valparaíso, Chile</h3>
+  <div class="date">Mar 2012 — Dec 2018</div>
+  <ul>
+    <li><strong>Thesis:</strong> Led the design and development of an IoT-enabled waste management platform with a real-time dashboard, collaborating with a multidisciplinary team of 5 engineers.</li>
+  </ul>
+
+  <h2>Certifications</h2>
+
+  <h3>CKA - Certified Kubernetes Administrator</h3>
+  <div class="date">Nov 2022</div>
+  <ul>
+    <li>Expertise in deploying, managing, and troubleshooting Kubernetes clusters.</li>
+    <li>Proficient in Kubernetes cluster architecture, including networking, storage, and security.</li>
+  </ul>
+  <div class="verified">Verified Certificate by The Linux Foundation.</div>
+
+  <h3>CKAD - Certified Kubernetes Application Developer</h3>
+  <div class="date">Dec 2022</div>
+  <ul>
+    <li>Skilled in designing, building, and optimizing Kubernetes-native applications.</li>
+    <li>Proficiency in using Kubernetes APIs and constructing applications with cloud-native principles.</li>
+  </ul>
+  <div class="verified">Verified Certificate by The Linux Foundation.</div>
+</div>
+
+<div class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-title">Details</div>
+    <div class="sidebar-text">
+      Concón, 2510000<br>
+      Chile<br>
+      (+56) 9 42142790<br>
+      dev.fran.ops@gmail.com
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-title">Links</div>
+    <div class="sidebar-text">
+      LinkedIn<br>
+      Github
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-title">Skills</div>
+    <div class="skill-item">
+      <div class="skill-name">AWS (EKS, EBS, EC2, ECR)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">GCP (GKE, GCE, Cloud Build, Artifact Registry)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Kubernetes (CKA + CKAD)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Terraform</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Docker, ECR/GCR/Artifact Registry</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">CI/CD (Jenkins, GH Actions, GitLab, Cloud Build)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Linux (Ubuntu, Debian, Amazon)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Monitoring (New Relic, ELK, Grafana, GCP)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Nginx, Application Servers</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">ArgoCD / GitOps</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Bash &amp; Shell Scripting</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Security (Vault, Container Scanning)</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">GCP IAM, Cloud Scheduler, Cloud Storage</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-title">Languages</div>
+    <div class="skill-item">
+      <div class="skill-name">English</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Español</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
