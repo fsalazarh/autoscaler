@@ -16,24 +16,20 @@
     color: #333;
   }
 
-  .wrapper {
-    display: flex;
-    width: 100%;
-  }
-
   /* Main content column */
   .main {
     width: 65%;
     padding: 28px 22px 28px 28px;
-    float: left;
   }
 
-  /* Sidebar - right column */
+  /* Sidebar - fixed position repeats on every page in WeasyPrint */
   .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 35%;
     color: #fff;
     padding: 28px 18px;
-    float: right;
   }
 
   h1 {
